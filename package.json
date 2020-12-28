@@ -1,6 +1,6 @@
 {
-  "name": "vue2-hammer",
-  "description": "Hammer.js wrapper for Vue 2.x to support some touching operation in the mobile.",
+  "name": "nuxt-hammer",
+  "description": "Hammer.js wrapper for NuxtJS to support some touching operation in the mobile with SSR.",
   "version": "2.1.2",
   "author": "bsdfzzzy@gmail.com",
   "main": "index.min.js",
@@ -9,7 +9,7 @@
     "prepub": "babel index.js --out-file index.min.js && uglifyjs index.min.js -o index.min.js"
   },
   "dependencies": {
-    "hammerjs": "^2.0.8",
+    "@squadette/hammerjs": "^2.1.0-pre3",
     "babel-runtime": "^6.26.0"
   },
   "devDependencies": {
@@ -30,14 +30,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bsdfzzzy/vue2-hammer"
+    "url": "https://github.com/mkuchak/nuxt-hammer"
   },
   "keywords": [
-    "vue2-hammer"
+    "nuxt-hammer"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bsdfzzzy/vue2-hammer/issues"
+    "url": "https://github.com/mkuchak/nuxt-hammer/issues"
   },
-  "homepage": "https://github.com/bsdfzzzy/vue2-hammer#readme"
+  "homepage": "https://github.com/mkuchak/nuxt-hammer#readme"
 }

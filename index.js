@@ -1,4 +1,4 @@
-import Hammer from 'hammerjs'
+import Hammer from '@squadette/hammerjs'
 
 const gestures = ['tap', 'pan', 'pinch', 'press', 'rotate', 'swipe']
 const subGestures = ['panstart', 'panend', 'panmove', 'pancancel', 'pinchstart', 'pinchmove', 'pinchend', 'pinchcancel', 'pinchin', 'pinchout', 'pressup', 'rotatestart', 'rotatemove', 'rotateend', 'rotatecancel']
