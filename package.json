@@ -1,7 +1,7 @@
 {
   "name": "nuxt-hammer",
   "description": "Hammer.js wrapper for NuxtJS to support some touching operation in the mobile with SSR.",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "author": "mkuchak@gmail.com",
   "main": "index.min.js",
   "scripts": {
