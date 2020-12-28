@@ -1,16 +1,14 @@
-import Vue from 'vue'
-import {
-  VueHammer
-} from '../index.min'
-import App from './App.vue'
+import Vue from "vue";
+import { NuxtHammer } from "../index.min";
+import App from "./App.vue";
 
 //use the plugin
-Vue.use(VueHammer)
+Vue.use(NuxtHammer);
 
 new Vue({
-  el: '#app',
+  el: "#app",
   data: {
-    event: ''
+    event: "",
   },
-  render: h => h(App)
-})
+  render: (h) => h(App),
+});

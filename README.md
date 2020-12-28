@@ -1,6 +1,6 @@
-# vue-hammer
+# nuxt-hammer
 
-Hammer.js wrapper for Vue to support some operation in the mobile
+Hammer.js wrapper for NuxtJS to support some operation in the mobile with SSR.
 
 This is a directive wrapper for Hammer.js 2.x. And this repo'inspiration is from v-touch.
 
@@ -8,20 +8,38 @@ If you want to find a same wrapper for Angular4+, you can have a look at [ngx-ha
 
 ## Install
 
-> This plugin supports Vue >= 2.0.
+> This plugin supports NuxtJS >= 2.0.
 
 ### npm
 
-Available through npm as `vue2-hammer`.
+Available through npm as `nuxt-hammer`.
 
 ```bash
-npm install vue2-hammer
+npm install nuxt-hammer
 ```
 
 ```Javascript
-import { VueHammer } from 'vue2-hammer'
-Vue.use(VueHammer)
+import { NuxtHammer } from 'nuxt-hammer'
+Vue.use(NuxtHammer)
 ```
+
+### As a plugin
+Create a plugin named `plugins/nuxt-hammer.js` and add follow content.
+
+```Javascript
+import Vue from 'vue'
+import NuxtHammer from 'nuxt-hammer'
+
+Vue.use(NuxtHammer)
+```
+
+And on `nuxt.config.js` add plugin configuration.
+
+```Javascript
+  plugins: ['~/plugins/nuxt-hammer.js'],
+```
+
+Now you are ready for usage.
 
 ## Usage
 
@@ -41,7 +59,7 @@ There are two ways to customize recognizer options such as `direction` and `thre
 
 ```js
 // change the threshold for all swipe recognizers
-VueHammer.config.swipe = {
+NuxtHammer.config.swipe = {
   threshold: 200
 };
 ```
